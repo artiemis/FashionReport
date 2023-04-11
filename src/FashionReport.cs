@@ -38,7 +38,7 @@ public sealed class FashionReportPlugin : IDalamudPlugin
 
         cm.AddHandler(CommandName, new CommandInfo(OnCommand)
         {
-            HelpMessage = "Displays an image with hints for scoring in Fashion Report."
+            HelpMessage = "Displays the main Fashion Report details image."
         });
 
         pi.UiBuilder.Draw += DrawUI;
