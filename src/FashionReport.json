@@ -1,0 +1,12 @@
+{
+  "Author": "artie",
+  "Name": "Fashion Report Viewer",
+  "Punchline": "Displays the latest Fashion Report details image by @KaiyokoStar.",
+  "Description": "Slash command: /fr",
+  "InternalName": "fashionReport",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "fashion",
+    "report"
+  ]
+}
