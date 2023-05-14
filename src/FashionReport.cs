@@ -16,7 +16,7 @@ public sealed class FashionReportPlugin : IDalamudPlugin
 
     public TextureWrap? Image = null;
     public string? Error = null;
-    private HttpClient Client;
+    private readonly HttpClient Client;
 
     private DalamudPluginInterface pi { get; init; }
     private CommandManager cm { get; init; }
@@ -85,7 +85,7 @@ public sealed class FashionReportPlugin : IDalamudPlugin
         Error = null;
         try
         {
-            byte[] imageBuffer = await Client.GetByteArrayAsync("https://api.arti3.dev/xiv/kaiyoko?im=0");
+            byte[] imageBuffer = await Client.GetByteArrayAsync("https://a.arti3.dev/xiv/kaiyoko?im=0");
             Image = await this.pi.UiBuilder.LoadImageAsync(imageBuffer);
         }
         catch (System.Exception exc)
