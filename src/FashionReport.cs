@@ -85,7 +85,7 @@ public sealed class FashionReportPlugin : IDalamudPlugin
         Error = null;
         try
         {
-            byte[] imageBuffer = await Client.GetByteArrayAsync("https://api.artie.love/xiv/kaiyoko?im=0");
+            byte[] imageBuffer = await Client.GetByteArrayAsync("https://api.artie.moe/xiv/kaiyoko?im=0");
             Image = await this.pi.UiBuilder.LoadImageAsync(imageBuffer);
         }
         catch (System.Exception exc)
